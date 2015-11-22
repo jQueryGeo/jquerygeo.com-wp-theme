@@ -139,6 +139,16 @@ Sensitive - WordPress Theme is distributed under the terms of the GNU GPL
         font-size:20pt;
     }
   
+    .social > span iframe {
+      height: 2em;
+    }
+
+    .social > span {
+      display: inline-block;
+      position: relative;
+      min-width: 8em;
+    }
+
     /* Featurettes
     ------------------------- */
 
