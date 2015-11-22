@@ -786,7 +786,8 @@ pre,
 code{
     display: block;
     max-width: 100%;
-    white-space: normal !important;
+    line-height: 1;
+    white-space: pre !important;
 }
 .box.widget{
      
