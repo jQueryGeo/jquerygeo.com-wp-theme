@@ -282,6 +282,7 @@ function sensitive_setup(){
     wp_enqueue_style('wpeden-bootstrap',get_template_directory_uri().'/bootstrap/css/bootstrap.css');   
     wp_enqueue_style('wpeden-bootstrap-responsive',get_template_directory_uri().'/bootstrap/css/bootstrap-responsive.css');   
     wp_enqueue_script('wpeden-bootstrap',get_template_directory_uri().'/bootstrap/js/bootstrap.min.js',array('jquery'));
+    wp_enqueue_script('wpeden-jquery-geo',get_template_directory_uri().'/node_modules/jquery.geo/dist/jquery.geo-1.0.0-b3.js',array('jquery'));
     wp_enqueue_script('wpeden-site',get_template_directory_uri().'/js/site.js',array('jquery'));
     wp_enqueue_style('wpeden-main',get_stylesheet_uri());
     wp_enqueue_script( 'comment-reply' ); 

@@ -20,4 +20,28 @@ jQuery(function(){
         });
     }
 
+    var map = null;
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (p) {
+        initMap([p.coords.longitude, p.coords.latitude]);
+      }, function (error) {
+        initMap();
+      });
+    } else {
+      initMap();
+    }
+
+    function initMap(center) {
+      var mapCont = jQuery('.navbar-wrapper');
+      mapCont.prepend('<div class="geomap" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">');
+
+      map = jQuery(".geomap").geomap({
+        center: center || [-71.0597732, 42.3584308],
+        zoom: 7
+      });
+
+      jQuery( ".osm" ).geomap("opacity", .5);
+    }
+
 });

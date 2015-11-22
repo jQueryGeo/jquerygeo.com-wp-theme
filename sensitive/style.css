@@ -81,6 +81,7 @@ Sensitive - WordPress Theme is distributed under the terms of the GNU GPL
 
     /* Special class on .container surrounding .navbar, used for positioning it into place. */
     .navbar-wrapper{
+       position: relative;
        padding-top:  20px;  
        padding-bottom: 0px;  
        margin-bottom: 20px;          
@@ -1368,5 +1369,6 @@ object{
 }
 
 #topmenu{
+    position: relative;
     z-index: 99999999;
 }
