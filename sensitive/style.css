@@ -85,6 +85,7 @@ Sensitive - WordPress Theme is distributed under the terms of the GNU GPL
        padding-top:  20px;  
        padding-bottom: 0px;  
        margin-bottom: 20px;          
+       min-height: 24em;
        background: #eee url('images/wild_oliva.png');
     }
     /*.home .navbar-wrapper{
