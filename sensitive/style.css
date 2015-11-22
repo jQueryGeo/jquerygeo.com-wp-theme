@@ -774,7 +774,6 @@ p.attachment img.alignleft{}
 pre,
 code{
     display: block;
-    float:left;
     max-width: 100%;
     white-space: normal !important;
 }
